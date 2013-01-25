@@ -1,0 +1,184 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="mstr.master.cs" Inherits="mstr" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>School Management</title>
+    <link href="css/trinity.css" rel="stylesheet" type="text/css" />
+ <link rel="shortcut icon" href="images/trinity.ico"></link>
+
+    <script type="text/JavaScript">
+
+        function MM_jumpMenu(targ, selObj, restore) { //v3.0
+            eval(targ + ".location='" + selObj.options[selObj.selectedIndex].value + "'");
+            if (restore) selObj.selectedIndex = 0;
+        }
+
+        function MM_swapImgRestore() { //v3.0
+            var i, x, a = document.MM_sr; for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+        }
+
+        function MM_preloadImages() { //v3.0
+            var d = document; if (d.images) {
+                if (!d.MM_p) d.MM_p = new Array();
+                var i, j = d.MM_p.length, a = MM_preloadImages.arguments; for (i = 0; i < a.length; i++)
+                    if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; } 
+            }
+        }
+
+        function MM_findObj(n, d) { //v4.01
+            var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+                d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+            }
+            if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+            for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+            if (!x && d.getElementById) x = d.getElementById(n); return x;
+        }
+
+        function MM_swapImage() { //v3.0
+            var i, j = 0, x, a = MM_swapImage.arguments; document.MM_sr = new Array; for (i = 0; i < (a.length - 2); i += 3)
+                if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
+        }
+
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script type="text/javascript">
+        function bbrowser() {
+            var nVer = navigator.appVersion;
+            var nAgt = navigator.userAgent;
+            var browserName = navigator.appName;
+            var fullVersion = '' + parseFloat(navigator.appVersion);
+            var majorVersion = parseInt(navigator.appVersion, 10);
+            var nameOffset, verOffset, ix;
+
+            // In Opera, the true version is after "Opera" or after "Version"
+            if ((verOffset = nAgt.indexOf("Opera")) != -1) {
+                browserName = "Opera";
+                fullVersion = nAgt.substring(verOffset + 6);
+                if ((verOffset = nAgt.indexOf("Version")) != -1)
+                    fullVersion = nAgt.substring(verOffset + 8);
+            }
+            // In MSIE, the true version is after "MSIE" in userAgent
+            else if ((verOffset = nAgt.indexOf("MSIE")) != -1) {
+                browserName = "Microsoft Internet Explorer";
+                fullVersion = nAgt.substring(verOffset + 5);
+            }
+            // In Chrome, the true version is after "Chrome" 
+            else if ((verOffset = nAgt.indexOf("Chrome")) != -1) {
+                browserName = "Chrome";
+                fullVersion = nAgt.substring(verOffset + 7);
+            }
+            // In Safari, the true version is after "Safari" or after "Version" 
+            else if ((verOffset = nAgt.indexOf("Safari")) != -1) {
+                browserName = "Safari";
+                fullVersion = nAgt.substring(verOffset + 7);
+                if ((verOffset = nAgt.indexOf("Version")) != -1)
+                    fullVersion = nAgt.substring(verOffset + 8);
+            }
+            // In Firefox, the true version is after "Firefox" 
+            else if ((verOffset = nAgt.indexOf("Firefox")) != -1) {
+                browserName = "Firefox";
+                fullVersion = nAgt.substring(verOffset + 8);
+            }
+            // In most other browsers, "name/version" is at the end of userAgent 
+            else if ((nameOffset = nAgt.lastIndexOf(' ') + 1) < (verOffset = nAgt.lastIndexOf('/'))) {
+                browserName = nAgt.substring(nameOffset, verOffset);
+                fullVersion = nAgt.substring(verOffset + 1);
+                if (browserName.toLowerCase() == browserName.toUpperCase()) {
+                    browserName = navigator.appName;
+                }
+            }
+            // trim the fullVersion string at semicolon/space if present
+            if ((ix = fullVersion.indexOf(";")) != -1) fullVersion = fullVersion.substring(0, ix);
+            if ((ix = fullVersion.indexOf(" ")) != -1) fullVersion = fullVersion.substring(0, ix);
+
+            majorVersion = parseInt('' + fullVersion, 10);
+            if (isNaN(majorVersion)) {
+                fullVersion = '' + parseFloat(navigator.appVersion);
+                majorVersion = parseInt(navigator.appVersion, 10);
+            }
+            var fullbrowsername = browserName + majorVersion + "";
+
+//            document.write('Browser name  = ' + browserName + '<br>');
+//            document.write('Full version  = ' + fullVersion + '<br>');
+//            document.write('Major version = ' + majorVersion + '<br>');
+//            document.write('navigator.appName = ' + navigator.appName + '<br>');
+//            document.write('navigator.userAgent = ' + navigator.userAgent + '<br>');
+
+            if (browserName == "Microsoft Internet Explorer" && majorVersion < 7.0) {
+                alert("Your Browser " + fullbrowsername + " is not compatible.\n For better Functionality \n Please download Latest Browser by clicking on the below link Name,\n Compatible Browsers");
+            }
+
+            if (browserName == "Firefox" && majorVersion < 4.0) {
+                alert("Your Browser " + fullbrowsername + " is not compatible.\n For better Functionality \n Please download Latest Browser by clicking on the below link Name,\n Compatible Browsers");
+            }
+            
+                if (browserName == "Chrome" && majorVersion < 12) {
+                    alert("Your Browser " + fullbrowsername + " is not compatible.\n For better Functionality \n Please download Latest Browser by clicking on the below link Name,\n Compatible Browsers");
+            }
+            else {
+            }
+        }
+    </script>
+
+</head>
+<body onload="bbrowser()">
+    <form id="form1" runat="server">
+    <div id="main" style="background-color:White">
+         <table width="100%">
+            <tr>
+                <td width="50%"><img src="images/logo.png" alt="" /></td>
+                <td align="right">
+                  </td>
+            </tr>
+         </table>
+        <div class="big_line">
+        </div>
+        <div class="comman_clss" align="center">
+            <a href="Default.aspx" target="_parent">
+                <asp:Label ID="Label1" runat="server" Text="Student Management System" 
+                    Font-Bold="True" Font-Size="X-Large" ForeColor="Black"></asp:Label>
+             </a>
+            </div>
+        
+        <div class="comman_clss">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        </div>
+        <div class="footer">
+            <div class="footer1">
+                <table width="100%">
+                    <tr>
+                        <td width="35%">
+                            <div class="l">
+                                </div>
+                        </td>
+                        <td valign="top">
+                            <div style="text-align: center; float: left;">
+                                <a href="browsers.htm" target="_blank">Compatible Browsers</a></div>
+                        </td>
+                        <td>
+                            <div class="r">
+                                <%--<img src="images/ourlogo.jpg" alt="" border="0" usemap="#Map" />--%><map name="Map" id="Map">
+                                    <area shape="rect" alt="" coords="244,3,429,16" href="http://sdssoftwares.co.uk/"
+                                        target="_blank" />
+                                    <area alt="" shape="rect" coords="246,18,427,34" href="mailto:sales@sdssoftwares.co.uk" />
+                                    <area  alt="" coords="6,5,238,28" href="http://sdssoftwares.co.uk/" target="_blank" />
+                                </map>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="clr">
+                </div>
+            </div>
+        </div>
+        <div class="clr">
+        </div>
+    </div>
+    </form>
+</body>
+</html>

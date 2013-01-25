@@ -1,0 +1,677 @@
+/* CSS Document */
+
+body
+{
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: justify;
+    color: #000000;
+   
+    background-repeat: repeat-x;
+    
+}
+
+a
+{
+    outline: 0px;
+}
+
+#main
+{
+    width: 1000px;
+    margin: auto;
+    padding: 0px;
+    border-bottom: #05678f;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-right: #05678f;
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-left: #05678f;
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-top:#05678f;
+    border-top-style:solid;
+    border-top-width:2px;
+}
+
+#logo_part
+{
+    width: 1000px;
+    float: left;
+}
+
+.big_line
+{
+    width: 1000px;
+    height: 15px;
+    background-color: #05678f;
+    float: left;
+}
+
+.comman_clss
+{
+    width: 1000px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.cmnClssLeft
+{
+    width: 220px;
+    padding-top: 0px;
+    float: left;
+    padding-left: 0px;
+    /*background-color:#363FA7;  */
+    border-color:#363FA7;
+    border-width:thin;
+    border-style:solid;
+    border-spacing:0px;           
+      
+}
+.cmnClssLeftstusent
+{
+    width: 150px;
+    padding-top: 0px;
+    float: left;
+    padding-left: 0px;
+    /*background-color:#363FA7;  */
+    border-color:#363FA7;
+    border-width:thin;
+    border-style:solid;
+    border-spacing:0px;           
+      
+}
+.cmnClssRight
+{
+    width: 750px;
+    padding-top: 0px;
+    float:left;
+    min-height:450px;
+}
+.cmnClssRightstudent
+{
+    width: 845px;
+    padding-top: 0px;
+    float:left;
+    min-height:450px;
+}
+.cmnClssRightTop
+{
+    width: 778px;
+    text-align: center;
+    border-bottom-color:#363FA7;
+    border-bottom-style:solid; 
+    border-bottom-width:thin;  
+    color:#990000;
+    font-family:Algerian, Andalus, BatangChe, 'Lucida Calligraphy', Vijaya, Arial, 'Times New Roman';
+/*     onmouseout="this.start()" onmouseover="this.stop()" */
+}
+.cmnClssRightTopstudent
+{
+    width: 845px;
+    text-align: center;
+    border-bottom-color:#363FA7;
+    border-bottom-style:solid; 
+    border-bottom-width:thin;  
+    color:#990000;
+    font-family:Algerian, Andalus, BatangChe, 'Lucida Calligraphy', Vijaya, Arial, 'Times New Roman';
+/*     onmouseout="this.start()" onmouseover="this.stop()" */
+}
+.cmnClssRightBtm
+{
+    width: 780px;
+}
+.cmnClssRightBtmstudent
+{
+    width: 845px;
+}
+.cmnClssRightBtm2
+{
+    width: 780px;
+}
+.cmnClssRightBtm2student
+{
+    width: 845px;
+}
+.comman_clss1
+{
+    width: 888px;
+    padding-left: 112px;
+    float: left;
+}
+
+.comman_login
+{
+    width: 776px;
+    float: left;
+}
+
+.comman_login_bg
+{
+    width: 776px;
+    background-image: url(../images/login_middle.png);
+    background-repeat: repeat-y;
+    float: left;
+}
+
+.comman_login_bg1
+{
+    width: 736px;
+    padding: 20px;
+    float: left;
+}
+
+.comman_login_bg2
+{
+    width: 736px;
+    float: left;
+}
+
+.l
+{
+    float: left;
+}
+.r
+{
+    float: right;
+}
+
+.clr
+{
+    clear: both;
+}
+
+.footer
+{
+    width: 1000px;
+    float: left;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+.footer1
+{
+    width: 1000px;
+   float: left;  
+    border-top-color: #05678f;
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+.txtalignCntr
+{
+    text-align: center;
+}
+.griedheader
+{
+    padding: 0px 20px 0px 20px;
+}
+#cngridview
+{
+    border: 1px solid #800000;
+    height: 300px;
+    width: 750px;
+    overflow: auto;    
+}
+
+.cngridviewsmall
+{
+    border: solid #B8B8B8;
+	border-color:Black;
+	border-width:1px;
+	height: 420px;
+    width:750px;
+    overflow: auto;
+}
+
+.cngridviewsmallforstudent
+{
+    border: solid #B8B8B8;
+	border-color:Black;
+	border-width:1px;
+	height: 100px;
+    width:530px;
+    overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: justify;
+}
+.cngridviewsmallforstudent11
+{
+    border: solid #B8B8B8;
+	border-color:Black;
+	border-width:1px;
+	height: 200px;
+    width:530px;
+    overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: justify;
+}
+.cngridviewsmallAssesment
+{
+    border: solid #B8B8B8;
+	border-color:Black;
+	border-width: medium;
+	height: 500px;
+    width:550px;
+    overflow: auto;
+}
+
+.cngdiv
+{
+    border: solid #B8B8B8;
+	border-color:Black;
+	border-width:1px;
+	
+   
+}
+.loginabove
+{
+    float:right;
+    text-align:right;
+    padding-right:20px;
+    padding-top:10px;
+    color:Red;
+    font-size:15px;
+    font-weight:bold;
+}
+
+LinkButton:hover
+{
+    color:#FF0066;
+}
+
+.treepad
+{
+    border-bottom-color:White;
+    border-bottom-width:thin;
+    border-bottom-style:solid;
+}
+
+.tblpaddingleft
+{
+    padding-left:30px;
+}
+
+.multilinetextarea 
+{
+    
+}
+
+.pjptblpaddingleft
+{
+   padding-left:30px;      
+   border:solid 1px ;   
+    
+}
+.overflowImages
+{
+    overflow:hidden;
+    float:left;
+}
+
+.tb10 {
+	
+	background-repeat:repeat-x;
+	border:1px solid #d1c7ac;
+	width: 150px;
+	color:#333333;
+	padding:0px;
+	margin-right:2px;
+	margin-bottom:4px;
+	font-family:tahoma, arial, sans-serif;
+}
+.tb11 {
+	background-image:url('images/form_bg.jpg');
+	background-repeat:repeat-x;
+	border:1px solid #d1c7ac;
+	width: 140px;
+	color:#333333;
+	padding:0px;
+	
+	font-family:tahoma, arial, sans-serif;
+	height: 18px;
+}
+
+
+.pnl
+{
+ background-repeat:inherit;
+  border-color:Gray;
+  border-width:thin;
+  width:700px;
+
+    
+}
+
+.tbNot1
+{
+   width:150px;
+   height:50px;   
+}
+
+.tbNot2
+{
+   width:150px;
+   height:150px;
+  
+     
+}
+
+
+.cmnClssRightTop1
+{
+    width: 778px;
+    text-align: center;
+   
+    font-size:19px;
+    color:#000000;
+    font-family:Algerian, Andalus, BatangChe, 'Lucida Calligraphy', Vijaya, Arial, 'Times New Roman';
+}
+
+.style1
+{
+   background-color:#F2F3F4;
+    
+     font-family:Georgia;
+ }
+ 
+ 
+ .style11
+{
+    background-color: #E6E6FA;
+   
+  
+   font-family:Georgia;
+ }
+ 
+ 
+ 
+ .style2
+ {
+    
+      background-color:#FFF0F5;
+       
+        padding:3px;
+ }
+ #VisitheaderContainer1
+ {
+      background-color:White; 
+      width:750px; 
+      border:1px; 
+      border-color:Gray; 
+      vertical-align:middle; 
+      border-style:solid; 
+      border-color:Gray; 
+      border-width:thin;
+ }
+#VisitheaderContainer2
+ {
+     position:relative; 
+     margin-bottom:15px; 
+     margin-left:15px; 
+     margin-top:15px; 
+     margin-right:15px; 
+     border-style:solid; 
+     border-color:Gray; 
+     border-width:thin; 
+     padding:15px;
+ }
+ 
+ .VisitheaderContainerstyle11
+ 
+{
+    background-color: #E6E6FA;
+     font-family: Georgia;
+     padding:3px;
+     font-size:12px;
+ }
+ 
+ 
+ .girdRowstyle
+ {
+     background-color: #E6E6FA;
+     padding:3px;
+    
+     }
+ 
+ 
+.VisitheaderContainerstyle22 
+ {
+         font-family: Georgia;
+      background-color:#F2F3F4;
+         
+
+          padding:3px;
+ }
+
+
+ .tbfreshpolicy1
+{
+             background-color: #E6E6FA;
+             font-family: Georgia;
+             vertical-align:middle;
+             padding:3px;
+             font-size:12px;
+ }
+ .tbfreshpolicy2
+ {
+                  font-family: Georgia;
+                 background-color:#F2F3F4;
+                  vertical-align:middle;
+                  font-size:12px;
+                  padding:3px;
+ }
+ 
+ 
+
+#divlapse1
+{
+     background-color:White; 
+      width:750px; 
+      height:240px; 
+      border:1px; 
+      border-color:Gray; 
+      vertical-align:middle; 
+      border-style:solid; 
+      border-color:Gray; 
+      border-width:thin;
+    
+    } 
+  
+ #divlapse2
+ {
+     position:relative; 
+     margin-bottom:15px; 
+     margin-left:15px; 
+     margin-top:15px; 
+     margin-right:15px; 
+     border-style:solid; 
+     border-color:Gray; 
+     border-width:thin; 
+     padding:15px;  
+     }
+
+ .tblapse1
+{
+             background-color: #E6E6FA;font-family: Georgia;vertical-align:middle;padding:3px;font-size:12px; 
+ }
+ .tblapse2
+ {
+        font-family: Georgia; background-color:#F2F3F4;vertical-align:middle;font-size:12px;padding:3px;
+ }
+ 
+ #divRenewal1
+{
+     background-color:White;width:750px;height:600px;border:1px; border-color:Gray;vertical-align:middle; 
+      border-style:solid; 
+      border-color:Gray; 
+      border-width:thin;
+    
+    } 
+  
+ #divRenewal2
+ {
+     position:relative; margin-bottom:15px;  margin-left:15px;  margin-top:15px; margin-right:15px;  border-style:solid;  border-color:Gray; border-width:thin;padding:15px;        
+   
+ }
+ 
+ 
+ #dishowDc1
+{
+      background-color:White; 
+
+      width:750px; 
+      height:240px; 
+      border:1px; 
+      border-color:Gray; 
+      vertical-align:middle; 
+      border-style:solid; 
+      border-color:Gray; 
+      border-width:thin;
+    
+    } 
+  
+ .dishowDc11
+ {
+     position:relative; 
+     margin-bottom:15px; 
+     height:620px;
+     margin-left:15px; 
+     margin-top:15px; 
+     margin-right:15px; 
+     border-style:solid; 
+     border-color:Gray; 
+     border-width:thin; 
+     padding:15px;  
+    background-color:Yellow;
+     }
+     
+     
+      #divFreshPlociy1
+{
+      background-color:White;width:750px;border:1px; border-color:Gray;vertical-align:middle; border-style:solid; 
+      border-color:Gray; 
+      border-width:thin;
+    
+    } 
+  
+ #divFreshPlociy2
+ {
+     position:relative; margin-bottom:15px;margin-left:15px;margin-top:15px; margin-right:15px; border-style:solid; border-color:Gray; 
+     border-width:thin; 
+     padding:15px;  
+   
+     }
+     
+     .divFreshpolicyDetail1
+     {
+      background-color:White;width:750px;height:800px; border:1px; border-color:Gray;vertical-align:middle; border-style:solid; 
+      border-color:Gray; 
+      border-width:thin;
+        
+     }
+      .divFreshpolicyDetail2
+      {
+      background-color:White;width:750px;height:240px; border:1px; border-color:Gray;vertical-align:middle; border-style:solid; 
+      border-color:Gray; 
+      border-width:thin;
+     
+          
+          }
+     
+     
+       
+     #divFreshEditDetail1
+     {
+      background-color:White;width:750px;height:800px; border:1px; border-color:Gray;vertical-align:middle; border-style:solid; 
+      border-color:Gray; 
+      border-width:thin;
+        
+     }
+      #divFresEditDetail2
+      {
+      background-color:White;width:750px;height:240px; border:1px; border-color:Gray;vertical-align:middle; border-style:solid; 
+      border-color:Gray; 
+      border-width:thin;
+      }
+     .divpjpD1
+     { 
+      background-color:White; width:750px; height:440px; border:1px; border-color:Gray; vertical-align:middle; border-style:solid; border-color:Gray; border-width:thin;        
+  
+     }
+      .divpjpD2
+      {
+        position:relative; margin-bottom:15px; margin-left:10px; margin-top:15px; margin-right:10px; border-style:solid; border-color:Gray; border-width:thin; padding:15px;
+        width:690px; height:380px;
+      }
+  .tbcolor11
+   { background-color: #E6E6FA;font-family: Georgia;vertical-align:middle;padding:3px;font-size:12px; }
+  .tbcolor22
+   { font-family: Georgia; background-color:#F2F3F4;vertical-align:middle;font-size:12px;padding:3px;}
+   
+   .tbcolor33
+   {font-family: Georgia; background-color:#FFF0F5;vertical-align:middle;font-size:12px;padding:3px;}
+  
+      .tbtitle
+      {font-size: 12.0pt;color: #C00000; font-weight: bold; font-family: Georgia;background-color:#FFF0F5;} 
+       
+    
+     #divDsoT1
+     { 
+      background-color:White; width:620px; height:370px; border:1px; border-color:Gray; vertical-align:middle; border-style:solid; border-color:Gray; border-width:thin;        
+     }
+    #divDsoT2
+      {
+        position:relative; margin-bottom:10px; margin-left:10px; margin-top:10px; margin-right:10px; border-style:solid; border-color:Gray; border-width:thin; padding:15px;
+        width:560px; height:320px;
+      }
+   
+    
+     #divcomp1
+     { 
+      background-color:White; width:620px; height:700px; border:1px; border-color:Gray; vertical-align:middle; border-style:solid; border-color:Gray; border-width:thin;        
+     }
+    #divcomp2
+      {
+        position:relative; margin-bottom:10px; margin-left:10px; margin-top:10px; margin-right:10px; border-style:solid; border-color:Gray; border-width:thin; padding:15px;
+        width:560px; height:650px;
+      }
+   
+       
+     #divcompEd1
+     { 
+      background-color:White; width:620px; height:600px; border:1px; border-color:Gray; vertical-align:middle; border-style:solid; border-color:Gray; border-width:thin;        
+     }
+     #divcompEd2
+      {
+        position:relative; margin-bottom:10px; margin-left:10px; margin-top:10px; margin-right:10px; border-style:solid; border-color:Gray; border-width:thin; padding:15px;
+        width:560px; height:550px;
+      }
+   
+   
+     #divadbankMas1
+     { 
+      background-color:White; width:600px; height:290px; border:1px; border-color:Gray; vertical-align:middle; border-style:solid; border-color:Gray; border-width:thin;        
+     }
+     #divadbankMas2
+      {
+        position:relative; margin-bottom:10px; margin-left:10px; margin-top:10px; margin-right:10px; border-style:solid; border-color:Gray; border-width:thin; padding:15px;
+        width:540px; height:240px;
+      }
+   
+    #divEditBranchD1
+     { 
+      background-color:White; width:600px; height:325px; border:1px; border-color:Gray; vertical-align:middle; border-style:solid; border-color:Gray; border-width:thin;        
+     }
+     #divEditBranchD2
+      {
+        position:relative; margin-bottom:10px; margin-left:10px; margin-top:10px; margin-right:10px; border-style:solid; border-color:Gray; border-width:thin; padding:15px;
+        width:540px; height:270px;
+      }

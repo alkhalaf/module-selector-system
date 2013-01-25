@@ -1,0 +1,136 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Student.master.cs" Inherits="SuperAdmin_sa" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>School Management</title>
+<link href="../css/superAdmin.css" rel="stylesheet" type="text/css" />
+<link href="../css/trinity_admin.css" rel="stylesheet" type="text/css" />
+<%--    <link rel="icon" type="image/ico" href="../images/trinity.ico"></link>
+<link rel="shortcut icon" href="../images/trinity.ico"></link>--%>
+    
+    
+  <%--  <script type = "text/javascript" >
+        function disableBackButton() {
+            window.history.forward();
+        }
+        setTimeout("disableBackButton()", 0);
+</script>--%>
+<script type="text/JavaScript">
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body onload="disableBackButton()">
+    <form id="form1" runat="server">
+<div id="main">
+<div id="logo_part">
+<div class="l"><img src="../images/logo.png" alt="" /></div>
+<span class="loginabove">Welcome: <u><asp:Label ID="lbluserid" runat="server"></asp:Label></u> </span>
+</div>
+
+<div class="big_line"></div>
+<div class="comman_clss">
+<div class="cmnClssLeftstusent">
+    <asp:TreeView ID="tv_super_admin" BackColor="#777777" CollapseImageUrl="~/images/minus.png" 
+ ExpandImageUrl="~/images/plus.png"     
+        runat="server" Font-Names="Arial"  ForeColor="White" Font-Size="Small" 
+        RootNodeStyle-NodeSpacing="5px" LeafNodeStyle-NodeSpacing="10px" 
+        LeafNodeStyle-Font-Bold="true" Width="150px">        
+    <HoverNodeStyle Font-Bold="True" />    
+    <Nodes>
+        <asp:TreeNode NavigateUrl="~/Student/Course_Module.aspx" Text="Choose Module" 
+            Value="Choose Module"></asp:TreeNode>
+        <asp:TreeNode Text="Result" Value="Summery(Overall Result)" 
+            NavigateUrl="~/Student/ResultSummery.aspx">
+                
+        </asp:TreeNode>        
+        <asp:TreeNode NavigateUrl="~/Student/Gradeprediction.aspx" Text="Grade Prediction" 
+            Value="Grade Pred"></asp:TreeNode>
+        <asp:TreeNode NavigateUrl="~/Student/Barchart.aspx" Text="Bar Representation" 
+            Value="Bar Chart Rep"></asp:TreeNode>
+        <asp:TreeNode NavigateUrl="~/Student/ChangePassword.aspx" 
+            Text="Change Password" Value="Change Password"></asp:TreeNode>
+    </Nodes>
+
+
+
+<RootNodeStyle NodeSpacing="5px" CssClass="treepad" Width="205px" ></RootNodeStyle>
+
+    <NodeStyle Font-Bold="True" CssClass="treepad" Width="205px" />
+
+<LeafNodeStyle NodeSpacing="10px" Font-Bold="True"></LeafNodeStyle>
+    </asp:TreeView>
+    <span style="background-color:White; padding-left:20px; background-repeat:repeat; display:block;">
+    <asp:LinkButton ID="lnk_logout" runat="server" CausesValidation="False" Font-Bold="True" Font-Names="Arial" Font-Size="Small" ForeColor="Black" 
+        onclick="lnk_logout_Click" OnInit="ImgSend_Init">Log Out</asp:LinkButton><br /><br /></span>
+    </div>
+<div class="cmnClssRightstudent">
+<div class="cmnClssRightTopstudent">
+   <table id="abhay" width="100%">
+        <tr>
+            <td>
+                <h2 style="background-color:Black; color: #FFFFFF;">
+                    Welcome To Student Dashboard</h2>
+            </td>
+        </tr>
+    </table>
+    </div>
+<div class="cmnClssRightBtmstudent"><asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        </asp:ContentPlaceHolder></div>
+<div class="cmnClssRightBtm2student"><asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder></div>
+</div>
+
+</div>
+
+
+
+
+<div class="footer">
+<div class="footer1">
+
+
+<div class="l"></div>
+<div class="r">&nbsp;</div>
+
+<div class="clr"></div>
+</div>
+
+</div>
+
+
+<div class="clr"></div>
+</div>
+
+    </form>
+</body>
+</html>

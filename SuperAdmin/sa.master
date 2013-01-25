@@ -1,0 +1,234 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="sa.master.cs" Inherits="SuperAdmin_sa" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>School Management</title>
+<link href="../css/superAdmin.css" rel="stylesheet" type="text/css" />
+<link href="../css/trinity_admin.css" rel="stylesheet" type="text/css" />
+<%--    <link rel="icon" type="image/ico" href="../images/trinity.ico"></link>
+<link rel="shortcut icon" href="../images/trinity.ico"></link>--%>
+    
+    
+  <%--  <script type = "text/javascript" >
+        function disableBackButton() {
+            window.history.forward();
+        }
+        setTimeout("disableBackButton()", 0);
+</script>--%>
+<script type="text/JavaScript">
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body onload="disableBackButton()">
+    <form id="form1" runat="server">
+<div id="main">
+<div id="logo_part">
+<div class="l"><img src="../images/logo.png" alt="" /></div>
+<span class="loginabove">Welcome: <u><asp:Label ID="lbluserid" runat="server"></asp:Label> </span></u>
+</div>
+
+<div class="big_line"></div>
+<div class="comman_clss">
+<div class="cmnClssLeft">
+    <%--<asp:TreeView ID="tv_super_admin" BackColor="BurlyWood" CollapseImageUrl="~/images/minus.png" 
+ ExpandImageUrl="~/images/plus.png"     
+        runat="server" Font-Names="Arial"  ForeColor="Black" Font-Size="Small" 
+        RootNodeStyle-NodeSpacing="5px" LeafNodeStyle-NodeSpacing="10px" 
+        LeafNodeStyle-Font-Bold="true" Width="220px">        
+    <ParentNodeStyle Font-Bold="False" />
+    <HoverNodeStyle ForeColor="#FF0066" Font-Bold="True" />    
+    <Nodes>
+        <asp:TreeNode Text="Company Master" Value="0" Expanded="false" 
+            SelectAction="Expand">
+            <asp:TreeNode NavigateUrl="~/SuperAdmin/CompanyMaster.aspx" Text="Add Company" 
+                Value="0123" ImageUrl="~/images/minus.png"></asp:TreeNode>
+            <asp:TreeNode NavigateUrl="~/SuperAdmin/ViewCompanyMaster.aspx" 
+                Text="View Company" Value="01" ImageUrl="~/images/minus.png"></asp:TreeNode>
+        </asp:TreeNode>        
+        <asp:TreeNode Text="Employee Details" Value="1" Expanded="false" SelectAction="Expand">
+            <asp:TreeNode Text="Super Admin Master" Value="11" ImageUrl="~/images/minus.png" NavigateUrl="~/SuperAdmin/sa_details.aspx"></asp:TreeNode>
+            <asp:TreeNode Text="Centre Manager Master" Value="12" ImageUrl="~/images/minus.png" NavigateUrl="~/SuperAdmin/cm_details.aspx"></asp:TreeNode>
+            <asp:TreeNode Text="Area Manager Master" Value="13" ImageUrl="~/images/minus.png"
+                NavigateUrl="~/SuperAdmin/am.aspx"></asp:TreeNode>
+            <asp:TreeNode Text="Admin Master" Value="14" ImageUrl="~/images/minus.png" NavigateUrl="~/SuperAdmin/admin.aspx"></asp:TreeNode>
+            <asp:TreeNode Text="DSO Master" Value="15" ImageUrl="~/images/minus.png" 
+                NavigateUrl="~/SuperAdmin/users.aspx"></asp:TreeNode>
+            <asp:TreeNode Text="Clients Master" Value="16" ImageUrl="~/images/minus.png" 
+                NavigateUrl="~/SuperAdmin/clients.aspx"></asp:TreeNode>
+            <asp:TreeNode NavigateUrl="~/SuperAdmin/renewalFeederDetail.aspx" 
+                ImageUrl="~/images/minus.png" Text="DEO  Master" Value="17"></asp:TreeNode>
+        </asp:TreeNode>
+        <asp:TreeNode Text="Employee Profile" Value="1" Expanded="false" SelectAction="Expand">
+            <asp:TreeNode ImageUrl="~/images/minus.png" 
+                NavigateUrl="~/SuperAdmin/ADMINPICTURE.aspx" Text="Admin Profile" 
+                Value="Admin Profile"></asp:TreeNode>
+            <asp:TreeNode NavigateUrl="~/SuperAdmin/CM.aspx" Text="Center Manager" ImageUrl="~/images/minus.png"
+                Value="Center Manager"></asp:TreeNode>
+            <asp:TreeNode Text="Area Manager Detail " Value="12" ImageUrl="~/images/minus.png" 
+                 NavigateUrl="~/SuperAdmin/Areamanager.aspx"></asp:TreeNode>
+            <asp:TreeNode Text="DSO Detail" Value="13" ImageUrl="~/images/minus.png"
+                NavigateUrl="~/SuperAdmin/Dso.aspx"></asp:TreeNode>
+            <asp:TreeNode Text="DEO Detail" Value="14" ImageUrl="~/images/minus.png" 
+                 NavigateUrl="~/SuperAdmin/Renawalfeeder.aspx"></asp:TreeNode>
+            <asp:TreeNode NavigateUrl="~/SuperAdmin/CLIENT.aspx" Text="Clients Detail" 
+                Value="Clients Detail" ImageUrl="~/images/minus.png"></asp:TreeNode>
+        </asp:TreeNode>
+        <asp:TreeNode Text="Client Master" Value="2" SelectAction="Expand" 
+            Expanded="false">
+            <asp:TreeNode Text="Bank Master" Value="21" ImageUrl="~/images/minus.png"
+                NavigateUrl="~/SuperAdmin/BankMaster.aspx"></asp:TreeNode>
+            <asp:TreeNode NavigateUrl="~/SuperAdmin/bankBranchMaster.aspx" ImageUrl="~/images/minus.png"
+                Text="Bank Branch Master" Value="23"></asp:TreeNode>
+            <asp:TreeNode Text="Insurance Master" ImageUrl="~/images/minus.png" Value="22" NavigateUrl="~/SuperAdmin/insuranceMaster.aspx"></asp:TreeNode>
+            <asp:TreeNode 
+                Text="INS Branch Master" ImageUrl="~/images/minus.png" Value="24" NavigateUrl="~/SuperAdmin/InsuranceBranchMaster.aspx"></asp:TreeNode>
+        </asp:TreeNode>
+        <asp:TreeNode Text="City Master" Value="3" 
+            NavigateUrl="~/SuperAdmin/branch_details.aspx"></asp:TreeNode>
+        <asp:TreeNode NavigateUrl="~/SuperAdmin/RegisterUser.aspx" Text="Register User" Value="6"></asp:TreeNode>
+            <asp:TreeNode Text="AM-DSO Map Master" Value="10" 
+            NavigateUrl="~/SuperAdmin/AmDsoMap.aspx"></asp:TreeNode>
+        <asp:TreeNode Text="AM/DSO Target Master" Value="9" SelectAction="Expand" Expanded="false">
+            <asp:TreeNode NavigateUrl="~/SuperAdmin/targetAMMaster.aspx" 
+                Text="AM Target Master" Value="91" ImageUrl="~/images/minus.png"></asp:TreeNode>
+            <asp:TreeNode Text="DSO Target Master" Value="92" ImageUrl="~/images/minus.png"
+                NavigateUrl="~/SuperAdmin/targetDSOMaster.aspx"></asp:TreeNode>
+        </asp:TreeNode>
+        <asp:TreeNode NavigateUrl="~/SuperAdmin/tutorial.aspx" Text="Tutorials" 
+            Value="Tutorials"></asp:TreeNode>
+       <asp:TreeNode Text="Reports" Value="2" SelectAction="Expand" 
+            Expanded="false">
+            <asp:TreeNode Text="MIS Report" Value="21" ImageUrl="~/images/minus.png"
+                NavigateUrl="~/SuperAdmin/Dsodar.aspx"></asp:TreeNode>
+            <asp:TreeNode NavigateUrl="~/SuperAdmin/Daily_Business.aspx" ImageUrl="~/images/minus.png"
+                Text="Daily Business Report" Value="23"></asp:TreeNode>
+            <asp:TreeNode Text="Autogen Field Reports" ImageUrl="~/images/minus.png" Value="22" 
+                NavigateUrl="~/SuperAdmin/Copy of Dsodar.aspx"></asp:TreeNode>
+            <asp:TreeNode 
+                Text="Bankwise Bancassurance " ImageUrl="~/images/minus.png" Value="24" 
+                NavigateUrl="~/SuperAdmin/Banksassurance.aspx"></asp:TreeNode>
+        </asp:TreeNode>
+        <asp:TreeNode Text="Log Details" Value="8" 
+            NavigateUrl="~/SuperAdmin/logdetail.aspx"></asp:TreeNode>
+            <asp:TreeNode  Text="Notification" 
+            NavigateUrl="~/SuperAdmin/Notification.aspx" Value="8"></asp:TreeNode>
+        <asp:TreeNode NavigateUrl="~/Chat/Default.aspx" Text="Chatting" 
+            Value="Chatting" Target="_Blank"></asp:TreeNode>
+    </Nodes>
+
+<RootNodeStyle NodeSpacing="5px" CssClass="treepad" Width="205px" ></RootNodeStyle>
+
+    <NodeStyle Font-Bold="True" CssClass="treepad" Width="205px" />
+
+<LeafNodeStyle NodeSpacing="10px" Font-Bold="True"></LeafNodeStyle>
+    </asp:TreeView>--%>
+    <asp:TreeView ID="tv_super_admin" BackColor="#777777" CollapseImageUrl="~/images/minus.png" 
+ ExpandImageUrl="~/images/plus.png"     
+        runat="server" Font-Names="Arial"  ForeColor="White" Font-Size="Small" 
+        RootNodeStyle-NodeSpacing="5px" LeafNodeStyle-NodeSpacing="10px" 
+        LeafNodeStyle-Font-Bold="true" Width="220px">        
+    <HoverNodeStyle Font-Bold="True" />    
+    <Nodes>
+        <asp:TreeNode Text=" Masters" Value="0" Expanded="false" 
+            SelectAction="Expand" ShowCheckBox="False">
+                
+            <asp:TreeNode Text="Course Master" Value="Course Master" 
+                NavigateUrl="~/SuperAdmin/CourseMaster.aspx"></asp:TreeNode>
+            <asp:TreeNode NavigateUrl="~/SuperAdmin/ModuleMaster.aspx" Text="Module Master" 
+                Value="Module Master" Expanded="True"></asp:TreeNode>
+                
+        </asp:TreeNode>        
+        <asp:TreeNode NavigateUrl="~/SuperAdmin/StudentDetails.aspx" 
+            Text="Search Student" Value="Search Student"></asp:TreeNode>
+        <asp:TreeNode NavigateUrl="~/SuperAdmin/Assesment.aspx" Text="Assessment" 
+            Value="Assessment"></asp:TreeNode>
+        <asp:TreeNode NavigateUrl="~/SuperAdmin/ResultSummery.aspx" 
+            Text="Summary(Overall Result)" Value="Summery(Overall Result)">
+        </asp:TreeNode>
+        <asp:TreeNode NavigateUrl="~/SuperAdmin/Barchart.aspx" Text="Bar Chart Rep" 
+            Value="Bar Chart Rep"></asp:TreeNode>
+        <asp:TreeNode NavigateUrl="~/SuperAdmin/ChangePassword.aspx" 
+            Text="Change Password" Value="Change Password"></asp:TreeNode>
+    </Nodes>
+
+<RootNodeStyle NodeSpacing="5px" CssClass="treepad" Width="205px" ></RootNodeStyle>
+
+    <NodeStyle Font-Bold="True" CssClass="treepad" Width="205px" />
+
+<LeafNodeStyle NodeSpacing="10px" Font-Bold="True"></LeafNodeStyle>
+    </asp:TreeView>
+    <span style="background-color:White; padding-left:20px; background-repeat:repeat; display:block;">
+    <asp:LinkButton ID="lnk_logout" runat="server" CausesValidation="False" Font-Bold="True" Font-Names="Arial" Font-Size="Small" ForeColor="Black" 
+        onclick="lnk_logout_Click" OnInit="ImgSend_Init">Log Out</asp:LinkButton><br /><br /></span>
+    </div>
+<div class="cmnClssRight">
+<div class="cmnClssRightTop">
+    <table id="abhay" width="100%">
+        <tr>
+            <td>
+                <h2 style="background-color:Black; color: #FFFFFF;">
+                    Welcome To Admin Dashboard</h2>
+            </td>
+        </tr>
+    </table>
+    </div>
+<div class="cmnClssRightBtm"><asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        </asp:ContentPlaceHolder></div>
+<div class="cmnClssRightBtm2"><asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder></div>
+</div>
+
+</div>
+
+
+
+
+<div class="footer">
+<div class="footer1">
+
+
+<div class="l"></div>
+<div class="r">&nbsp;</div>
+
+<div class="clr"></div>
+</div>
+
+</div>
+
+
+<div class="clr"></div>
+</div>
+
+    </form>
+</body>
+</html>

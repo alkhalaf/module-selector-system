@@ -1,0 +1,106 @@
+/* CSS Document */
+
+body {
+	margin-left: 0px;
+	margin-top:0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-align:justify;
+	color:#000000;
+	
+	
+}
+
+a{ outline:0px;}
+
+#main{ width:1000px; 
+margin: auto; 
+padding:0px; border-bottom:#05678f; border-bottom-style:solid; border-bottom-width:2px; border-right:#05678f; border-right-style:solid; border-right-width:2px;  border-left:#05678f; border-left-style:solid; border-left-width:2px; border-top:#05678f; border-top-style:solid; border-top-width:2px; 
+	}
+	
+#logo_part{ width:1000px; 
+float:left; 
+	}
+
+.big_line{ width:1000px; height:15px; background-color:#05678f; 
+float:left; 
+	}
+	
+.comman_clss{ width:1000px; padding-top:2px; padding-bottom:2px;
+float:left; 
+	}
+	
+.comman_clss1{ width:888px; padding-left:112px;
+float:left; 
+	}
+	
+.comman_login{ width:776px; 
+float:left; 
+	}
+	
+.comman_login_bg{ width:776px; background-image:url(../images/login_middle.png); background-repeat:repeat-y; 
+float:left; 
+	}
+	
+.comman_login_bg1{ width:736px; padding:20px; 
+float:left; 
+	}	
+	
+.comman_login_bg2{ width:736px; 
+float:left; 
+	}	
+
+.l{ float:left;
+	}
+.r{ float:right;
+	}
+	
+.clr{ clear:both;
+}
+
+.footer{ width:1000px; float:left; padding-top:8px; padding-bottom:8px; 
+}
+
+
+.footer1{ width:1000px; float:left; border-top-color:#05678f; border-top-style:solid; border-top-width:1px; 
+}
+
+.cmnClssRightTop1
+{
+	min-height:20px;
+    width: 758px;
+    text-align: center;
+    border-bottom-color:#363FA7;
+    border-bottom-style:solid; 
+    border-bottom-width:thin;  
+    color:#990000;
+    font-family:Times New Roman;
+/*     onmouseout="this.start()" onmouseover="this.stop()" */
+}
+
+.cmnClssRightTop1admin
+{
+	min-height:20px;
+    width: 758px;
+    text-align: center;
+    border-bottom-color:#363FA7;
+    border-bottom-style:solid; 
+    border-bottom-width:thin;  
+    color:#990000;
+    font-family:Algerian, Andalus, BatangChe, 'Lucida Calligraphy', Vijaya, Arial, 'Times New Roman';
+/*     onmouseout="this.start()" onmouseover="this.stop()" */
+}
+
+.cmnClssRightTop11
+{
+    width: 10px;
+    text-align: center;
+    border-bottom-color:#363FA7;
+    border-bottom-style:solid; 
+    border-bottom-width:thin;  
+    color:#990000;
+    font-family:Algerian, Andalus, BatangChe, 'Lucida Calligraphy', Vijaya, Arial, 'Times New Roman';
+/*     onmouseout="this.start()" onmouseover="this.stop()" */
+}

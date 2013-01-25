@@ -1,0 +1,211 @@
+﻿    #divcompanyD1
+     {
+     
+    background-color:White; width:600px; height:800px; border:1px; border-color:Gray; vertical-align:middle; border-style:solid; border-color:Gray; border-width:thin; 
+    
+        
+     }
+       #divcompanyD2
+      {
+        position:relative; margin-bottom:15px; margin-left:15px; margin-top:15px; margin-right:15px; border-style:solid; border-color:Gray; border-width:thin; padding:15px;
+        width:530px; height:740px;
+     }
+     
+ .tbcolor1
+   {
+             background-color:#CCCCCC;font-family: Georgia;vertical-align:middle;padding:3px;font-size:12px; 
+   }
+ .tbcolor2
+   {
+        font-family: Georgia; background-color:#EEEEEE;vertical-align:middle;font-size:12px;padding:3px;
+   }
+   
+   .tbcolor3
+   {
+        font-family: Georgia; background-color:#FFF0F5;vertical-align:middle;font-size:12px;padding:3px;
+   }
+   
+   
+   .txtStyle {
+	background-image:url(images/form_bg.jpg);background-repeat:repeat-x; border:1px solid #d1c7ac; width: 140px;color:#333333; padding:0px;
+	font-family:tahoma, arial, sans-serif;
+}
+
+#divViewcompanyD1
+     {
+     
+    background-color:White; width:600px;border:1px; border-color:Gray; vertical-align:middle; border-style:solid; border-color:Gray; border-width:thin; 
+    
+        
+     }
+       #divViewcompanyD2
+      {
+        position:relative; margin-bottom:15px; margin-left:15px; margin-top:15px; margin-right:15px; border-style:solid; border-color:Gray; border-width:thin; padding:15px;
+        width:530px;
+     }
+
+
+    #divbranchD1
+     { 
+      background-color:White; width:600px; border:1px; border-color:Gray; vertical-align:middle; border-style:solid; border-color:Gray; border-width:thin;        
+     }
+       #divbranchD2
+      {
+        position:relative; margin-bottom:15px; margin-left:15px; margin-top:15px; margin-right:15px; border-style:solid; border-color:Gray; border-width:thin; padding:15px;
+        width:530px;
+     }
+
+
+     #diveditBranchD1
+     { 
+      background-color:White; width:600px; height:340px; border:1px; border-color:Gray; vertical-align:middle; border-style:solid; border-color:Gray; border-width:thin;        
+     }
+       #diveditBranchD2
+      {
+        position:relative; margin-bottom:15px; margin-left:15px; margin-top:15px; margin-right:15px; border-style:solid; border-color:Gray; border-width:thin; padding:15px;
+        width:530px; height:275px;
+     }
+
+
+    #divRolemasterD1
+     { 
+      background-color:White; width:500px; height:180px; border:1px; border-color:Gray; vertical-align:middle; border-style:solid; border-color:Gray; border-width:thin;        
+     }
+       #divRolemasterD2
+      {
+        position:relative; margin-bottom:15px; margin-left:15px; margin-top:15px; margin-right:15px; border-style:solid; border-color:Gray; border-width:thin; padding:15px;
+        width:425px; height:120px;
+     }
+     
+     
+       #divuserRegistD1
+     { 
+      background-color:White; width:765px; border:1px; border-color:Gray; vertical-align:middle; border-style:solid; border-color:Gray; border-width:thin;        
+     }
+       #divuserRegistDmodule
+     { 
+      background-color:White; width:550px; border:1px; border-color:Gray; vertical-align:middle; border-style:solid; border-color:Gray; border-width:thin;        
+     }
+       #divuserRegistD2
+      {
+        position:relative;  margin-bottom:15px; margin-left:15px; margin-top:15px; margin-right:15px; border-style:solid; border-color:Gray; border-width:thin; padding:15px;
+        
+     }
+      #divuserRegistmod
+      {
+        position:relative;  margin-bottom:15px; margin-left:15px; margin-top:15px; margin-right:15px; border-style:solid; border-color:Gray; border-width:thin; padding:15px;
+        
+     }
+      #divDsoMapD1
+     { 
+      background-color:White; width:525px; height:250px; border:1px; border-color:Gray; vertical-align:middle; border-style:solid; border-color:Gray; border-width:thin;        
+     }
+       #divDsoMapD2
+      {
+        position:relative; margin-bottom:15px; margin-left:15px; margin-top:15px; margin-right:15px; border-style:solid; border-color:Gray; border-width:thin; padding:15px;
+        width:450px; height:180px;
+     }
+     
+     
+      #divAmDsoMapD1
+     { 
+      background-color:White; width:530px; height:275px; border:1px; border-color:Gray; vertical-align:middle; border-style:solid; border-color:Gray; border-width:thin;        
+     }
+       #divAmDsoMapD2
+      {
+        position:relative; margin-bottom:15px; margin-left:15px; margin-top:15px; margin-right:15px; border-style:solid; border-color:Gray; border-width:thin; padding:15px;
+        width:450px; height:215px;
+     }
+     
+     
+       #divTargetMasterD1
+     { 
+      background-color:White; width:530px; height:480px; border:1px; border-color:Gray; vertical-align:middle; border-style:solid; border-color:Gray; border-width:thin;        
+     }
+      #divTargetMasterD2
+      {
+        position:relative; margin-bottom:15px; margin-left:15px; margin-top:15px; margin-right:15px; border-style:solid; border-color:Gray; border-width:thin; padding:15px;
+        width:470px; height:420px;
+     }
+     
+     
+     #divEditTargetMasterD1
+     { 
+      background-color:White; width:530px; height:425px; border:1px; border-color:Gray; vertical-align:middle; border-style:solid; border-color:Gray; border-width:thin;        
+     }
+      #divEditTargetMasterD2
+      {
+        position:relative; margin-bottom:15px; margin-left:15px; margin-top:15px; margin-right:15px; border-style:solid; border-color:Gray; border-width:thin; padding:15px;
+        width:470px; height:365px;
+      }
+      
+      
+     #divtargatDsoD1
+     { 
+      background-color:White; width:600px; height:580px; border:1px; border-color:Gray; vertical-align:middle; border-style:solid; border-color:Gray; border-width:thin;        
+     }
+      #divtargatDsoD2
+      {
+        position:relative; margin-bottom:15px; margin-left:15px; margin-top:15px; margin-right:15px; border-style:solid; border-color:Gray; border-width:thin; padding:15px;
+        width:540px; height:520px;
+      }
+      
+      
+      #divEdittargatDsoD1
+     { 
+      background-color:White; width:600px; height:365px; border:1px; border-color:Gray; vertical-align:middle; border-style:solid; border-color:Gray; border-width:thin;        
+     }
+      #divEdittargatDsoD2
+      {
+        position:relative; margin-bottom:15px; margin-left:15px; margin-top:15px; margin-right:15px; border-style:solid; border-color:Gray; border-width:thin; padding:15px;
+        width:540px; height:300px;
+      }
+      
+      #divTutiralD1
+     { 
+      background-color:White; width:600px;  border:1px; border-color:Gray; vertical-align:middle; border-style:solid; border-color:Gray; border-width:thin;        
+     }
+     #divTutiralD11
+     { 
+      background-color:White; width:750px; border:1px; border-color:Gray; vertical-align:middle; border-style:solid; border-color:Gray; border-width:thin;        
+     }
+     
+      #divTutiralD2
+      {
+        position:relative; margin-bottom:15px; margin-left:10px; margin-top:15px; margin-right:10px; border-style:solid; border-color:Gray; border-width:thin; padding:15px;
+        width:540px;
+      }
+      #divTutiralD22
+      {
+        position:relative; margin-bottom:15px; margin-left:10px; margin-top:15px; margin-right:10px; border-style:solid; border-color:Gray; border-width:thin; padding:15px;
+        width:700px;
+      }
+      
+       #divpasswordD1
+     { 
+      background-color:White; width:600px; height:200px; border:1px; border-color:Gray; vertical-align:middle; border-style:solid; border-color:Gray; border-width:thin;        
+     }
+      #divpasswordD2
+      {
+        position:relative; margin-bottom:15px; margin-left:10px; margin-top:15px; margin-right:10px; border-style:solid; border-color:Gray; border-width:thin; padding:15px;
+        width:540px; height:140px;
+      }
+      .tdspace
+      {
+    	 border-bottom:2px #FFFFFF solid;
+    	 }
+  .divTutiralD11
+     { 
+      background-color:White; width:750px;  border:1px; border-color:Gray; vertical-align:middle; border-style:solid; border-color:Gray; border-width:thin;        
+     }
+      .divTutiralD22
+      {
+        position:relative; margin-bottom:15px; margin-left:10px; margin-top:15px; margin-right:10px; border-style:solid; border-color:Gray; border-width:thin; padding:15px;
+        width:700px;
+      }
+       #divSuperInsurenceBranch1
+     { background-color:White; width:750px; height:auto; border:1px; border-color:Gray; vertical-align:middle; border-style:solid; border-color:Gray; border-width:thin; }
+     
+      #divSuperInsurenceBranch2
+      { position:relative; margin-bottom:10px; margin-left:10px; margin-top:10px; margin-right:10px; border-style:solid; border-color:Gray; border-width:thin; padding:10px;
+      width:700px; height:auto;}
